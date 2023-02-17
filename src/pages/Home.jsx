@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-// import Vid from "../video/slamdunk.mp4";
-// import ReactPlayer from "react-player";
+import Vid from '../video/slamdunk.mp4';
+import ReactPlayer from 'react-player';
 import sts from '../images/sts.jpeg';
 import jdm from '../images/jdm.jpeg';
 import stw from '../images/stw.jpeg';
@@ -10,16 +10,19 @@ import kbh from '../images/kbh.jpeg';
 import { Link } from 'react-router-dom';
 
 export default function Home(props) {
-  // const [isVideoLoaded, setIsVideoLoaded] = useState();
-  // const onLoadedData = () => {
-  //   setIsVideoLoaded(true);
-  // };
+  const [isVideoLoaded, setIsVideoLoaded] = useState();
+  const onLoadedData = () => {
+    setIsVideoLoaded(true);
+  };
   return (
     <div>
       <div className="slamdunk">
-        {/* <ReactPlayer
-          style={{ width: "100vw", height: "900px" }}
+        <h1>TODAY'S MOVIE</h1>
+        <ReactPlayer
+          style={{ width: '100vw', height: '900px' }}
           className="video-box"
+          width="99vw"
+          height="800px"
           url={Vid}
           playing={true}
           controls={true}
@@ -27,11 +30,10 @@ export default function Home(props) {
           muted={true}
           playsinline={true}
           onReady={onLoadedData}
-        /> */}
-        <h1>TODAY'S MOVIE</h1>
-        <video muted autoPlay loop>
+        />
+        {/* <video muted autoPlay loop>
           <source src="/video/slamdunk.mp4" type="video/mp4" />
-        </video>
+        </video> */}
         <Link to="movie/0">
           <button>
             <p>슬램덩크 이동</p>
