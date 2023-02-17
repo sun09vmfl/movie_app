@@ -1,0 +1,197 @@
+@import 'minireset.min.css';
+body {
+  background-color: rgb(1, 8, 30);
+}
+
+.root-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* slamdunk main*/
+.slamdunk {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.slamdunk button {
+  position: absolute;
+  cursor: pointer;
+  top: 35%;
+  left: 10%;
+  width: 150px;
+  height: 60px;
+  background-color: transparent;
+  border: 3px solid #fff;
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 10px;
+}
+.slamdunk button p {
+  color: #fff;
+  font-size: 17px;
+}
+.slamdunk video {
+  object-fit: cover;
+  width: 100vw;
+  height: 800px;
+}
+.slamdunk h1 {
+  margin-top: 16px;
+  font-size: 87px;
+  font-weight: 900;
+}
+.slamdunk h2 {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.slamdunk-box .pr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slamdunk-box .pr h4 {
+  font-size: 19px;
+  padding: 15px 0;
+}
+.slamdunk-box .chr .chr-flex {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.slamdunk-box .chr .chr-flex figure {
+  width: 250px;
+}
+.slamdunk-box .chr .chr-flex figure img {
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 14px 28px, rgba(255, 255, 255, 0.22) 0px 10px 10px;
+}
+/* 스와이퍼 */
+
+/* header */
+.header-container {
+  background-color: transparent;
+  color: #fff;
+}
+.header-wrap {
+  background-color: transparent;
+  height: 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-left-wrap {
+  display: flex;
+  background-color: transparent;
+}
+.header-left-wrap ul {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+.header-left-wrap ul li {
+  background-color: transparent;
+  margin-right: 14px;
+  padding: 8px;
+}
+
+.header-nav-item {
+  background-color: transparent;
+  font-weight: 600;
+}
+
+/* not found page */
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+/* 메인 무비 */
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.movie-container {
+  width: 250px;
+  margin: 16px;
+  /* background-color: #373b69; */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.movie-container img {
+  border-radius: 20px 20px 0 0;
+  transition: 0.5s;
+}
+.movie-container:hover {
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.movie-container:hover img {
+  transform: scale(1.1);
+}
+
+.movie-container img {
+  max-width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-weight: bold;
+}
+.movie-info h4 {
+  margin: 0;
+  font-size: 17px;
+  color: #fff;
+  font-weight: bold;
+}
+.movie-info span {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 3px;
+  font-size: 20px;
+  color: #f7f0b2;
+}
+
+/* detail page */
+.detail-container .movie-info {
+  display: flex;
+  justify-content: start;
+}
+.detail-container .movie-info img {
+  border-radius: 10px;
+}
+.detail-container .original_title {
+  font-size: 30px;
+  padding: 30px;
+}
+.vote_average {
+  padding-left: 30px;
+}
+.detail-container .overview {
+  color: #fff;
+}
+.infoBox div {
+  padding: 10px 30px;
+}
+
+.overviewBox div {
+  padding: 10px;
+}
